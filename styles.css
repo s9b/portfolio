@@ -103,13 +103,14 @@ body {
 }
 
 .nav-link {
-    color: #00ff00;
-    text-decoration: none;
+    color: #00ff00 !important;
+    text-decoration: none !important;
     font-weight: 500;
     transition: color 0.3s ease;
     position: relative;
-    cursor: pointer;
+    cursor: pointer !important;
     display: inline-block;
+    pointer-events: auto !important;
 }
 
 .nav-link:hover {
