@@ -108,6 +108,8 @@ body {
     font-weight: 500;
     transition: color 0.3s ease;
     position: relative;
+    cursor: pointer;
+    display: inline-block;
 }
 
 .nav-link:hover {

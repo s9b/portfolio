@@ -1,20 +1,24 @@
 // Terminal Portfolio Interactive Features
 document.addEventListener('DOMContentLoaded', function() {
     
-    // Smooth scrolling for navigation links
+    // Navigation links - allow normal link behavior for separate pages
     const navLinks = document.querySelectorAll('.nav-link');
     navLinks.forEach(link => {
+        // Only prevent default for same-page anchors, not for separate pages
         link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href');
-            const targetSection = document.querySelector(targetId);
-            
-            if (targetSection) {
-                targetSection.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
+            const href = this.getAttribute('href');
+            // If it's a same-page anchor (starts with #), prevent default and scroll
+            if (href.startsWith('#')) {
+                e.preventDefault();
+                const targetSection = document.querySelector(href);
+                if (targetSection) {
+                    targetSection.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
             }
+            // For separate pages (.html files), allow normal navigation
         });
     });
 
