@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Projects by Saaz Bhargava spanning RAG systems, MLOps, model governance, computer vision, and AI-enabled backends.">
+    <meta name="description" content="Projects by Saaz Bhargava spanning agentic apps, sports analytics, RAG systems, MLOps, model governance, and computer vision.">
     <meta name="theme-color" content="#0b110d">
     <title>Projects | Saaz Bhargava</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,7 +25,7 @@
                 <a class="nav-link" href="blog.html"><span class="nav-icon">04</span>Blog</a>
                 <a class="nav-link" href="contact.html"><span class="nav-icon">05</span>Contact</a>
             </nav>
-            <div class="availability-pill"><span class="status-dot"></span>Open to ML and backend roles</div>
+            <div class="availability-pill"><span class="status-dot"></span>Recent work pulled from resume + GitHub</div>
         </header>
 
         <div class="page-shell">
@@ -38,7 +38,7 @@
                     <div class="identity-copy">
                         <div class="role-pill">Selected work</div>
                         <h2>Recent projects</h2>
-                        <p class="muted">A mix of public GitHub repositories and resume-highlighted builds that reflect how I work: measurable, product-aware, and technical.</p>
+                        <p class="muted">A mix of public GitHub repositories and resume-highlighted builds that reflect how I work: technical depth, product sense, and real implementation discipline.</p>
                     </div>
                     <div class="project-links">
                         <a class="button-link" href="https://github.com/s9b?tab=repositories" target="_blank" rel="noopener noreferrer">All GitHub repos</a>
@@ -49,11 +49,11 @@
                     <div class="panel-kicker">$ filters</div>
                     <h2 class="section-title">Themes across the work</h2>
                     <div class="chips">
-                        <span class="chip chip-green">RAG</span>
-                        <span class="chip chip-cyan">MLOps</span>
-                        <span class="chip chip-violet">AI Governance</span>
-                        <span class="chip chip-yellow">Computer Vision</span>
-                        <span class="chip chip-red">FastAPI</span>
+                        <span class="chip chip-green">Agentic Apps</span>
+                        <span class="chip chip-cyan">Sports Analytics</span>
+                        <span class="chip chip-violet">RAG</span>
+                        <span class="chip chip-yellow">MLOps</span>
+                        <span class="chip chip-red">AI Governance</span>
                     </div>
                 </section>
             </aside>
@@ -61,30 +61,107 @@
             <main class="main-panel" id="main-content">
                 <section class="panel page-heading reveal">
                     <div class="page-kicker">saaz.dev@portfolio:~$ ls projects/featured</div>
-                    <h1 class="page-title">GitHub work and flagship builds.</h1>
-                    <p class="lead">This page pulls from both the latest resume and the most relevant repositories on my GitHub. The focus is on systems that were built with clear technical intent, not just one-off demos.</p>
+                    <h1 class="page-title">Flagship builds and recent public work.</h1>
+                    <p class="lead">These are the projects that best represent how I think and build right now: measurable ML systems, agentic products with guardrails, and experiments that are still engineered with care.</p>
                 </section>
 
                 <section class="project-grid">
                     <article class="panel project-card reveal">
-                        <div class="project-art art-green"><code>fraud_detection/
-├── api
-├── mlflow
-├── dvc
-└── monitor</code></div>
+                        <div class="project-art art-green"><code>nba_predictor/
+elo.py
+trainer.py
+optuna
+backtest.py</code></div>
                         <div>
-                            <h2 class="project-title">Fraud Detection MLOps Pipeline</h2>
-                            <p class="project-copy">Production-oriented fraud detection system built on the IEEE-CIS dataset with XGBoost, experiment tracking, versioned data workflows, monitoring, CI, and API serving.</p>
+                            <h2 class="project-title">NBA Predictor</h2>
+                            <p class="project-copy">A fully terminal-based NBA game predictor built with seven seasons of data, CARMELO-lite ELO ratings, Vegas odds, injury signals, advanced stats, and a nine-model training stack.</p>
                         </div>
                         <div class="project-meta chips">
-                            <span class="chip chip-green">XGBoost</span>
-                            <span class="chip chip-cyan">MLflow</span>
-                            <span class="chip chip-violet">DVC</span>
-                            <span class="chip chip-yellow">Evidently AI</span>
+                            <span class="chip chip-green">Python</span>
+                            <span class="chip chip-cyan">Optuna</span>
+                            <span class="chip chip-violet">XGBoost</span>
+                            <span class="chip chip-yellow">nba_api</span>
                         </div>
                         <ul class="detail-list">
-                            <li><strong>Scale:</strong> 590k transactions from IEEE-CIS.</li>
-                            <li><strong>Result:</strong> ROC-AUC 0.93 with 47 passing pytest tests.</li>
+                            <li><strong>Feature depth:</strong> 250+ engineered features across rolling windows, fatigue, travel, Vegas implied probability, and advanced team stats.</li>
+                            <li><strong>Workflow:</strong> trains, tunes, calibrates, predicts live games, and runs flat-bet backtests from one CLI-first system.</li>
+                        </ul>
+                        <div class="project-links">
+                            <a class="button-link" href="https://github.com/s9b/NBA-Predictor" target="_blank" rel="noopener noreferrer">GitHub repo</a>
+                        </div>
+                    </article>
+
+                    <article class="panel project-card reveal">
+                        <div class="project-art art-cyan"><code>proxyme/
+step_up_card.tsx
+agent_steps
+gmail oauth
+audit trail</code></div>
+                        <div>
+                            <h2 class="project-title">Proxy Me</h2>
+                            <p class="project-copy">An agentic web app where users delegate real-world tasks to an AI agent, but every irreversible action requires an explicit step-up authorization card and gets written to an audit trail.</p>
+                        </div>
+                        <div class="project-meta chips">
+                            <span class="chip chip-cyan">Next.js</span>
+                            <span class="chip chip-green">Auth0</span>
+                            <span class="chip chip-violet">Supabase</span>
+                            <span class="chip chip-yellow">Vercel AI SDK</span>
+                        </div>
+                        <ul class="detail-list">
+                            <li><strong>Why it stands out:</strong> it treats trust, consent, and human approval as first-class product primitives inside an AI workflow.</li>
+                            <li><strong>Implementation:</strong> combines OAuth-backed Gmail access, task orchestration, approvals, and immutable logging in one deployed app.</li>
+                        </ul>
+                        <div class="project-links">
+                            <a class="button-link" href="https://github.com/s9b/proxyme" target="_blank" rel="noopener noreferrer">GitHub repo</a>
+                            <a class="button-link" href="https://proxyme-nine.vercel.app" target="_blank" rel="noopener noreferrer">Live demo</a>
+                        </div>
+                    </article>
+
+                    <article class="panel project-card reveal">
+                        <div class="project-art art-violet"><code>audit_env/
+reset()
+step()
+submit_audit()
+score = 1.00</code></div>
+                        <div>
+                            <h2 class="project-title">Model Card Compliance Auditor</h2>
+                            <p class="project-copy">An OpenEnv environment that trains or evaluates agents on model-card compliance. It focuses on detecting missing documentation, inadequate sections, and cross-section policy violations that matter in real governance workflows.</p>
+                        </div>
+                        <div class="project-meta chips">
+                            <span class="chip chip-violet">OpenEnv</span>
+                            <span class="chip chip-cyan">FastAPI</span>
+                            <span class="chip chip-green">AI Governance</span>
+                            <span class="chip chip-yellow">Evaluation</span>
+                        </div>
+                        <ul class="detail-list">
+                            <li><strong>Hackathon result:</strong> part of the work that led to national-finalist selection in the 2026 Meta x Hugging Face x OpenEnv hackathon.</li>
+                            <li><strong>Technical angle:</strong> turns governance review into a scored environment with tasks, actions, observations, and deterministic grading.</li>
+                        </ul>
+                        <div class="project-links">
+                            <a class="button-link" href="https://github.com/s9b/model-card-auditor" target="_blank" rel="noopener noreferrer">GitHub repo</a>
+                            <a class="button-link" href="https://sazqt-model-card-auditor.hf.space" target="_blank" rel="noopener noreferrer">Live space</a>
+                        </div>
+                    </article>
+
+                    <article class="panel project-card reveal">
+                        <div class="project-art art-yellow"><code>fraud_detection/
+mlflow
+dvc repro
+/predict
+drift report</code></div>
+                        <div>
+                            <h2 class="project-title">Fraud Detection MLOps Pipeline</h2>
+                            <p class="project-copy">Production-oriented fraud detection system built on the IEEE-CIS dataset with XGBoost, SMOTE, experiment tracking, versioned data workflows, FastAPI serving, and monitoring.</p>
+                        </div>
+                        <div class="project-meta chips">
+                            <span class="chip chip-yellow">XGBoost</span>
+                            <span class="chip chip-green">MLflow</span>
+                            <span class="chip chip-violet">DVC</span>
+                            <span class="chip chip-red">Evidently AI</span>
+                        </div>
+                        <ul class="detail-list">
+                            <li><strong>Scale:</strong> trained on 590,540 IEEE-CIS transactions with 454 total features and severe class imbalance handling.</li>
+                            <li><strong>Result:</strong> ROC-AUC 0.9296, AUC-PR 0.6414, plus 47 out of 47 passing pytest tests and CI gating around model improvement.</li>
                         </ul>
                         <div class="project-links">
                             <a class="button-link" href="https://github.com/s9b/fraud-detection-mlops" target="_blank" rel="noopener noreferrer">GitHub repo</a>
@@ -92,69 +169,48 @@
                     </article>
 
                     <article class="panel project-card reveal">
-                        <div class="project-art art-cyan"><code>governance/
-audit.py
-rules.yaml
-api/
-reports/</code></div>
+                        <div class="project-art art-red"><code>FastAPI
+summary
+flashcards
+Q&amp;A
+SQLite SRS</code></div>
                         <div>
-                            <h2 class="project-title">Model Card Compliance Auditor</h2>
-                            <p class="project-copy">An AI governance tool for evaluating whether model cards are complete, compliant, and usable by downstream teams. Built as a practical quality layer around documentation and review.</p>
+                            <h2 class="project-title">MemoryPal AI Study Assistant</h2>
+                            <p class="project-copy">A resume-highlighted study assistant that converts notes into summaries, flashcards, and question answering. It uses a full RAG pipeline with Sentence Transformers, FAISS retrieval, SQLite-based spaced repetition, and Streamlit deployment.</p>
                         </div>
                         <div class="project-meta chips">
-                            <span class="chip chip-cyan">Compliance</span>
-                            <span class="chip chip-green">FastAPI</span>
-                            <span class="chip chip-violet">AI Governance</span>
-                        </div>
-                        <ul class="detail-list">
-                            <li><strong>Goal:</strong> improve model documentation quality before models move deeper into delivery workflows.</li>
-                            <li><strong>Angle:</strong> treats governance as a product and tooling problem, not a PDF problem.</li>
-                        </ul>
-                        <div class="project-links">
-                            <a class="button-link" href="https://github.com/s9b/model-card-auditor" target="_blank" rel="noopener noreferrer">GitHub repo</a>
-                        </div>
-                    </article>
-
-                    <article class="panel project-card reveal">
-                        <div class="project-art art-violet"><code>retriever = FAISS()
-embed = MiniLM()
-query -&gt; top_k
-score = 5/5</code></div>
-                        <div>
-                            <h2 class="project-title">simple-RAG</h2>
-                            <p class="project-copy">A focused retrieval experiment built around sentence-transformers and FAISS, with attention on retrieval quality and lightweight evaluation instead of hype-only demos.</p>
-                        </div>
-                        <div class="project-meta chips">
-                            <span class="chip chip-violet">Sentence Transformers</span>
+                            <span class="chip chip-red">RAG System</span>
                             <span class="chip chip-cyan">FAISS</span>
-                            <span class="chip chip-green">Evaluation</span>
+                            <span class="chip chip-green">SQLite</span>
+                            <span class="chip chip-yellow">Streamlit</span>
                         </div>
                         <ul class="detail-list">
-                            <li><strong>Signal:</strong> achieved 5/5 retrieval accuracy in the documented evaluation flow.</li>
-                            <li><strong>Use:</strong> forms the kind of retrieval foundation I build on for larger assistant products.</li>
+                            <li><strong>Product idea:</strong> not just answer questions once, but make study sessions more useful over time through spaced repetition.</li>
+                            <li><strong>Source:</strong> one of the core flagship builds highlighted in the latest resume.</li>
                         </ul>
                         <div class="project-links">
-                            <a class="button-link" href="https://github.com/s9b/simple-RAG" target="_blank" rel="noopener noreferrer">GitHub repo</a>
+                            <a class="button-link disabled" href="#">Public link available on request</a>
                         </div>
                     </article>
 
                     <article class="panel project-card reveal">
-                        <div class="project-art art-yellow"><code>EffNetB3 + attention
+                        <div class="project-art art-green"><code>EffNetB3 + attention
 Grad-CAM
 5-class grading
-&lt; 20MB edge target</code></div>
+&lt; 20MB target</code></div>
                         <div>
                             <h2 class="project-title">SA-EffNetB3 for Diabetic Retinopathy</h2>
-                            <p class="project-copy">Attention-guided EfficientNetB3 pipeline for 5-class diabetic retinopathy grading on Messidor-2, built to balance medical-imaging performance with deployment practicality.</p>
+                            <p class="project-copy">Attention-guided EfficientNetB3 pipeline for five-class diabetic retinopathy grading on Messidor-2, designed to balance medical-imaging performance with explainability and lightweight deployment.</p>
                         </div>
                         <div class="project-meta chips">
-                            <span class="chip chip-yellow">Computer Vision</span>
                             <span class="chip chip-green">PyTorch</span>
-                            <span class="chip chip-red">Grad-CAM</span>
+                            <span class="chip chip-cyan">Computer Vision</span>
+                            <span class="chip chip-violet">Grad-CAM</span>
+                            <span class="chip chip-yellow">EfficientNetB3</span>
                         </div>
                         <ul class="detail-list">
-                            <li><strong>Result:</strong> 95.77% validation accuracy with fewer than 5M parameters.</li>
-                            <li><strong>Engineering detail:</strong> augmentation, oversampling, and explainability built into the workflow.</li>
+                            <li><strong>Result:</strong> 95.77% validation accuracy with fewer than 5 million parameters.</li>
+                            <li><strong>Engineering detail:</strong> uses augmentation, oversampling, and Grad-CAM explainability with edge-friendly deployment goals.</li>
                         </ul>
                         <div class="project-links">
                             <a class="button-link" href="https://github.com/s9b/Diabetic-Retinopathy-Detection-using-SA-EffNetB3" target="_blank" rel="noopener noreferrer">GitHub repo</a>
@@ -162,51 +218,77 @@ Grad-CAM
                     </article>
 
                     <article class="panel project-card reveal">
-                        <div class="project-art art-red"><code>FastAPI
-Gemini AI
-scrapers/
-prompt ops</code></div>
+                        <div class="project-art art-cyan"><code>/session-handoff
+DECISIONS.md
+CONTEXT.md
+CLAUDE.md
+handoff done</code></div>
                         <div>
-                            <h2 class="project-title">Memenem Backend</h2>
-                            <p class="project-copy">An AI-powered backend for meme generation using FastAPI, Gemini, and multi-source scraping. A playful product, but built with real backend structure and API thinking.</p>
+                            <h2 class="project-title">session-handoff</h2>
+                            <p class="project-copy">A Claude Code skill that captures what changed in a work session, what broke, what was decided, and what should happen next so teams do not lose context between AI-assisted coding sessions.</p>
                         </div>
                         <div class="project-meta chips">
-                            <span class="chip chip-red">FastAPI</span>
-                            <span class="chip chip-cyan">Generative AI</span>
-                            <span class="chip chip-green">Backend</span>
+                            <span class="chip chip-cyan">Developer Tools</span>
+                            <span class="chip chip-green">Claude Code</span>
+                            <span class="chip chip-violet">Markdown Workflows</span>
+                            <span class="chip chip-yellow">Team Productivity</span>
                         </div>
                         <ul class="detail-list">
-                            <li><strong>Focus:</strong> orchestrating model calls and content sources behind a clean service layer.</li>
-                            <li><strong>Why it matters:</strong> not every AI build has to be serious to still prove strong engineering habits.</li>
+                            <li><strong>Core payoff:</strong> reduces repeated orientation work by turning project memory into lightweight shared documents.</li>
+                            <li><strong>Why I like it:</strong> it sits right at the intersection of AI tooling, team workflows, and practical developer experience.</li>
                         </ul>
                         <div class="project-links">
-                            <a class="button-link" href="https://github.com/s9b/memenem-backend" target="_blank" rel="noopener noreferrer">GitHub repo</a>
+                            <a class="button-link" href="https://github.com/s9b/session-handoff" target="_blank" rel="noopener noreferrer">GitHub repo</a>
                         </div>
                     </article>
 
                     <article class="panel project-card reveal">
-                        <div class="project-art art-green"><code>MemoryPal
-summary
-flashcards
-Q&amp;A
-SQLite SRS</code></div>
+                        <div class="project-art art-violet"><code>embed = MiniLM()
+index.faiss
+127 chunks
+eval.py
+score = 5/5</code></div>
                         <div>
-                            <h2 class="project-title">MemoryPal AI Study Assistant</h2>
-                            <p class="project-copy">A resume-highlighted RAG-style study assistant that turns notes into summaries, flashcards, and Q&amp;A while tracking spaced repetition with SQLite. Designed for repeated use, not one-time prompting.</p>
+                            <h2 class="project-title">simple-RAG</h2>
+                            <p class="project-copy">A focused retrieval experiment built around Sentence Transformers and FAISS, with a small golden dataset and explicit evaluation to measure whether the retriever is actually working.</p>
                         </div>
                         <div class="project-meta chips">
-                            <span class="chip chip-green">RAG System</span>
+                            <span class="chip chip-violet">Sentence Transformers</span>
                             <span class="chip chip-cyan">FAISS</span>
-                            <span class="chip chip-violet">SQLite</span>
-                            <span class="chip chip-yellow">Streamlit</span>
+                            <span class="chip chip-green">Evaluation</span>
+                            <span class="chip chip-yellow">Python</span>
                         </div>
                         <ul class="detail-list">
-                            <li><strong>Core idea:</strong> use retrieval plus spaced repetition to make study sessions more useful over time.</li>
-                            <li><strong>Source:</strong> featured in the latest resume as a flagship AI build.</li>
+                            <li><strong>Signal:</strong> achieved 5 out of 5 correct retrievals on the documented golden question set.</li>
+                            <li><strong>Use:</strong> reflects how I prefer to build RAG systems, starting with retrieval quality before polishing assistant behavior.</li>
                         </ul>
                         <div class="project-links">
-                            <a class="button-link disabled" href="#">Public link available on request</a>
+                            <a class="button-link" href="https://github.com/s9b/simple-RAG" target="_blank" rel="noopener noreferrer">GitHub repo</a>
                         </div>
+                    </article>
+                </section>
+
+                <section class="content-grid two-column">
+                    <article class="panel reveal">
+                        <div class="panel-kicker">$ more_from_github</div>
+                        <h2 class="section-title">More recent public builds</h2>
+                        <ul class="detail-list">
+                            <li><strong>self-correcting-narrative:</strong> a deployed TypeScript project exploring self-correction loops in interactive AI experiences.</li>
+                            <li><strong>Resume-Matcher-with-NLP:</strong> NLP-driven resume matching and text analysis work in Python.</li>
+                            <li><strong>memenem frontend and backend:</strong> a split-stack generative AI product with FastAPI, scraping, and deployed frontend work.</li>
+                            <li><strong>vaccine system:</strong> full-stack TypeScript and backend work around appointment-style product flows.</li>
+                            <li><strong>Kubernetes and CI/CD labs:</strong> hands-on infrastructure repos covering monitoring, pipelines, and deployment practice.</li>
+                        </ul>
+                    </article>
+
+                    <article class="panel reveal">
+                        <div class="panel-kicker">$ why_these_projects</div>
+                        <h2 class="section-title">What ties the portfolio together</h2>
+                        <ul class="detail-list">
+                            <li><strong>Evaluation matters:</strong> whether it is fraud detection, retrieval quality, or model-card auditing, I like projects with measurable feedback loops.</li>
+                            <li><strong>Product thinking stays present:</strong> I care about approvals, interfaces, deployment, and how a technical system feels to use.</li>
+                            <li><strong>Range is intentional:</strong> sports analytics, AI governance, vision, and developer tooling all sharpen different parts of the same engineering muscle.</li>
+                        </ul>
                     </article>
                 </section>
             </main>
@@ -214,7 +296,7 @@ SQLite SRS</code></div>
 
         <footer class="site-footer">
             <span>© 2026 Saaz Bhargava</span>
-            <span class="footer-note">Projects sourced from the latest resume and github.com/s9b</span>
+            <span class="footer-note">Projects synced April 12, 2026 from the latest resume and github.com/s9b</span>
         </footer>
     </div>
 
